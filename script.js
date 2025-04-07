@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const audio = new Audio('audio/mimusica.mp3');
   audio.loop = true;
 
-  // Para que empiece después de una interacción
   document.body.addEventListener('click', () => {
     audio.play().catch(() => {
       console.log("Usuario necesita interactuar para reproducir audio.");
