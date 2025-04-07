@@ -53,12 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Música automática al cargar (requiere interacción del usuario)
 document.addEventListener('DOMContentLoaded', () => {
-  const audio = new Audio('audio/mimusica.mp3');
-  audio.loop = true;
+  const audio = document.getElementById('musicaFondo');
 
+  // Solo reproducir si está pausado (después de primer click)
   document.body.addEventListener('click', () => {
-    audio.play().catch(() => {
-      console.log("Usuario necesita interactuar para reproducir audio.");
-    });
+    if (audio.paused) {
+      audio.play().catch(() => {
+        console.log("Usuario necesita interactuar para reproducir audio.");
+      });
+    }
   }, { once: true });
 });
+
