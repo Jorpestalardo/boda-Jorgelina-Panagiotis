@@ -55,13 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const audio = document.getElementById('musicaFondo');
 
-  // Solo reproducir si está pausado (después de primer click)
-  document.body.addEventListener('click', () => {
+  const activarMusica = () => {
     if (audio.paused) {
-      audio.play().catch(() => {
-        console.log("Usuario necesita interactuar para reproducir audio.");
-      });
+      audio.play().catch(err => console.log("No se pudo reproducir hasta que el usuario interactúe."));
     }
-  }, { once: true });
+    // Importante: remover el listener para que no se dispare de nuevo
+    document.body.removeEventListener('click', activarMusica);
+  };
+
+  document.body.addEventListener('click', activarMusica);
 });
 
