@@ -1,0 +1,144 @@
+  body {
+    background-image: url('img/fondo.jpg'); /* Cambiá esta ruta por el path real */
+    background-repeat: repeat;
+    background-size: auto;
+    color: #310A31; /* violeta oscuro */
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem; 
+  }
+
+  body, p, li {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;  
+}
+  
+  .icono-verde {
+    color: #7A8450;
+    font-size: 1.5rem; /* Aproximadamente 24px */
+    margin-right: 0.5rem; /* Espaciado opcional */
+  }
+  .navbar {
+    background-color: #b8c0a6 !important; /* verde lima suave */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #310A31;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #310A31 !important;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #006494 !important; /* azul profundo */
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/hero.gif') no-repeat center center/cover;
+  }
+  
+  .hero .overlay {
+    background-color: rgba(49, 10, 49, 0.4); /* violeta oscuro con transparencia */
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    color: #ffffff;
+  }
+
+  #countdown {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+  
+  section {
+    padding: 4rem 2rem;
+  }
+  
+  section h2 {
+    color: #46aad8; /* azul profundo */
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-inner img {
+    border-radius: 20px;
+  }
+  
+  .btn-outline-secondary {
+    border-color: #7A8450; /* verde oliva grisáceo */
+    color: #7A8450;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #7A8450;
+    color: white;
+  }
+  
+  #regalos {
+    background-color: #7A8450; /* verde oliva */
+    color: #310A31; /* morado profundo */
+    padding: 4rem 2rem;
+  }
+  
+  #regalos h2,
+  #regalos p {
+    color: #e9f0ea;
+  }
+  
+  #regalos .fs-4.fw-bold {
+    color: #e9f0ea;
+  }
+  
+  
+  .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #310A31;
+  }
+  
+  audio {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+  }
+
+  #historia h1 {
+    color: #7A8450; /* verde oliva */
+  }
+  
+  .btn-confirmar {
+    background-color: transparent;
+    border: 2px solid #46aad8;
+    color: #46aad8;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .btn-confirmar:hover {
+    background-color: #08a5e3;
+    color: #ffffff;
+  }
+
+  .hero {
+    height: 100vh;
+    background: url('img/hero.gif') no-repeat center center/cover;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      background: url('img/hero-mobile.gif') no-repeat center center/cover;
+    }
+  }
