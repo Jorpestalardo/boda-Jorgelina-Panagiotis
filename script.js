@@ -22,11 +22,12 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
+const basePath = '/boda-Jorgelina-Panagiotis/';
 let currentLang = 'es';
 
 function loadLanguage(lang) {
   currentLang = lang;
-  fetch(`lang/${currentLang}.json`)
+  fetch(`${basePath}lang/${currentLang}.json`)
     .then(res => res.json())
     .then(data => {
       document.querySelectorAll('[data-key]').forEach(el => {
@@ -42,6 +43,7 @@ function switchLanguage() {
   const newLang = currentLang === 'es' ? 'gr' : 'es';
   loadLanguage(newLang);
 }
+
 
 // 🔽 Llamada inicial para cargar el idioma por defecto al entrar
 document.addEventListener('DOMContentLoaded', () => {
